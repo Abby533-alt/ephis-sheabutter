@@ -3,7 +3,7 @@ import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
 export default function Footer () {
   return (
-    <footer id="footer" className="bg-yellow-100 text-[#4A3E36] px-6 md:px-16 py-10 mt-20">
+    <footer id="footer" className="bg-yellow-200 text-[#4A3E36] px-6 md:px-16 py-10 mt-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Overview */}
         <div>
