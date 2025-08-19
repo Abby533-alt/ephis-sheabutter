@@ -27,7 +27,7 @@ export default function HeroSection() {
           <Link to="/ProductsPage" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition cursor-pointer">
             Browse Products →
           </Link>
-          <Link to="/SecondAbout" className="border border-white hover:bg-white hover:text-black text-white font-semibold px-6 py-3 rounded-lg transition">
+          <Link to="/AboutUs" className="border border-white hover:bg-white hover:text-black text-white font-semibold px-6 py-3 rounded-lg transition">
             Learn Our Story
           </Link>
         </div>

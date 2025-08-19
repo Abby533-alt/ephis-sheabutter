@@ -1,9 +1,9 @@
-import { Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
 
 
 export default function Footer () {
   return (
-    <footer id="footer" className="bg-yellow-200 text-[#4A3E36] px-6 md:px-16 py-10 mt-20">
+    <footer id="footer" className="bg-[#473208] text-white px-6 md:px-16 py-10 mt-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Overview */}
         <div>
@@ -13,9 +13,9 @@ export default function Footer () {
             We celebrate nature, nurture your skin, and empower local communities.
           </p>
           <div className="flex gap-4 mt-4">
-            <Facebook className="h-5 w-5"/>
-            <Linkedin className="h-5 w-5"/>
-            <Twitter className="h-5 w-5"/>
+            <Facebook className="h-5 w-5 text-blue-500"/>
+            <Linkedin className="h-5 w-5 text-blue-600"/>
+            <Instagram className="h-5 w-5 text-pink-500"/>
           </div>
         </div>
 

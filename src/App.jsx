@@ -6,14 +6,16 @@ import Productdetailspage from "./Pages/Productdetailspage"
 import { Theme } from "@radix-ui/themes"
 import AboutUs from "./Components/AboutUs"
 import ContactUs from "./Pages/ContactUs"
+import Blog from "./Pages/Blog"
+
 
 const ephisSheaButterRouter = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '*', element: <Notfound /> },
   { path: "/productspage", element: <ProductsPage /> },
-  {path: "/productdetailspage", element: <Productdetailspage/>},
   {path: "/contactus", element: <ContactUs />},
   {path: "/aboutus", element: <AboutUs />},
+  {path: "/blog", element: <Blog />}
 ])
 export default function App() {
 
