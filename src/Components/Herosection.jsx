@@ -4,7 +4,7 @@ import { Link } from "react-router";
 // HeroSection.jsx
 export default function HeroSection() {
   return (
-    <div className="relative bg-cover bg-center h-screen text-white mt-5" style={{ backgroundImage: `url(${heroimg})` }}>
+    <div className="relative bg-cover bg-center h-screen text-white md:mt-5" style={{ backgroundImage: `url(${heroimg})` }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 

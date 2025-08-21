@@ -145,7 +145,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="bg-[#f7e8c8] px-6 md:px-20 py-16">
+      <section className=" px-6 md:px-20 py-16">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Left Content */}
           <div className="flex-1">
@@ -197,6 +197,35 @@ export default function AboutUs() {
                 <p className="text-xs text-gray-500">100% Natural & Pure</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 relative bg-yellow-400 overflow-hidden">
+        <div className="absolute inset-0 bg-yellow-300 opacity-20"></div>
+        <div className="relative max-w-4xl mx-auto px-6 text-center text-white">
+
+          <h2 className="text-4xl font-bold mb-4">
+            Nourish Your Skin, Naturally 🌿
+          </h2>
+
+          <p className="text-lg mb-8 text-green-100">
+            Experience the pure goodness of organic shea butter — crafted with care,
+            for radiant skin, healthy hair, and natural wellness.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="/productspage"
+              className="px-6 py-3 rounded-xl bg-white text-green-700 font-semibold shadow-md hover:bg-green-100 transition"
+            >
+              Shop Now
+            </a>
+            <a
+              href="/contactus" // 
+              className="px-6 py-3 rounded-xl border-2 border-white text-white font-semibold hover:bg-green-700 transition"
+            >
+              Contact Us
+            </a>
           </div>
         </div>
       </section>

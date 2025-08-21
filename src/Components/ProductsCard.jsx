@@ -6,7 +6,7 @@ import img from "../assets/images/img.jpeg"
 import img1 from "../assets/images/img1.jpeg"
 import img9 from "../assets/images/img9.jpeg"
 import products5 from "../assets/images/products5.jpeg"
-import product1 from "../assets/images/product1.jpeg"
+import product4 from "../assets/images/product4.jpeg"
 import product7 from "../assets/images/product7.jpeg"
 import product8 from "../assets/images/product8.jpeg"
 import products6 from "../assets/images/products6.jpeg"
@@ -69,7 +69,7 @@ const products = [
     description: "Tropical coconut and shea butter blend",
     rating: 4.9,
     reviews: 126,
-    image: product1,
+    image: product4,
   },
   {
     id: 8,

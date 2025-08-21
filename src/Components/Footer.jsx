@@ -1,21 +1,33 @@
-import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Linkedin, Instagram, PhoneIcon } from 'lucide-react';
+import ephis from "../assets/images/ephis.png"
+import { Link } from 'lucide-react';
 
 
-export default function Footer () {
+export default function Footer() {
   return (
     <footer id="footer" className="bg-[#473208] text-white px-6 md:px-16 py-10 mt-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Overview */}
         <div>
-          <h2 className="text-2xl font-bold text-shadow-yellow-700 mb-4">Shea Essence</h2>
+          <div className='flex'>
+            <img src={ephis} alt="logo" className='h-7 w-7' />
+            <h2 className="text-2xl font-bold text-shadow-yellow-700 mb-4">Ephis Shea Butter</h2>
+          </div>
           <p className="text-sm leading-relaxed">
-            Pure, handcrafted Shea Butter made with love in Ghana. 
+            Pure, handcrafted Shea Butter made with love in Ghana.
             We celebrate nature, nurture your skin, and empower local communities.
           </p>
           <div className="flex gap-4 mt-4">
-            <Facebook className="h-5 w-5 text-blue-500"/>
-            <Linkedin className="h-5 w-5 text-blue-600"/>
-            <Instagram className="h-5 w-5 text-pink-500"/>
+            <p className="rounded-lg bg-blue-500 h-10 w-10 flex items-center justify-center cursor-pointer"><Facebook className="h-7 w-7 text-white " /></p>
+            <p className="rounded-lg bg-blue-500 h-10 w-10 flex items-center justify-center cursor-pointer"><Linkedin className="h-7 w-7 text-white " /></p>
+            <p className="rounded-lg bg-pink-400 h-10 w-10 flex items-center justify-center cursor-pointer"><Instagram className="h-7 w-7 text-white " /></p>
+            <a
+              href="tel:+233592420665"
+              aria-label="Call 059 242 0665"
+              className="rounded-lg bg-green-400 h-10 w-10 flex items-center justify-center cursor-pointer hover:bg-green-500 active:scale-95 transition focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+            >
+              <PhoneIcon className="h-7 w-7 text-white" />
+            </a>
           </div>
         </div>
 

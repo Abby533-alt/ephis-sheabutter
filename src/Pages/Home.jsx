@@ -3,6 +3,8 @@ import Footer from "../Components/Footer"
 import HeroSection from "../Components/Herosection"
 import SecondAbout from "../Components/SecondAbout"
 import SheaButterProcess from "../Components/SheaProcess"
+import Solutions from "../Components/Solutions"
+
 
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
             <HeroSection />
             <SecondAbout />
             <SheaButterProcess />
+            <Solutions />
             <Footer />
         </section>
     )
