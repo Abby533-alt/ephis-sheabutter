@@ -27,26 +27,35 @@ export default function ContactInfo() {
     return errors;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const validationErrors = validate(formData);
-    setErrors(validationErrors);
+  //   const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const validationErrors = validate(formData);
+  //   setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
-      setIsSubmitting(true);
-      try {
-        // Simulate sending to API (you can replace with your fetch/axios code)
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+  //   if (Object.keys(validationErrors).length === 0) {
+  //     setIsSubmitting(true);
+  //     try {
+  //       const response = await fetch("https://formspree.io/f/mldllqjq", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/json" },
+  //         body: JSON.stringify(formData),
+  //       });
 
-        alert("Form submitted successfully!");
-        setFormData({ fullName: "", email: "", subject: "", message: "" });
-      } catch (err) {
-        console.error("Form submission error:", err);
-      } finally {
-        setIsSubmitting(false);
-      }
-    }
-  };
+  //       if (response.ok) {
+  //         alert("Message sent successfully!");
+  //         setFormData({ fullName: "", email: "", subject: "", message: "" });
+  //       } else {
+  //         alert("Failed to send message. Try again later.");
+  //       }
+  //     } catch (err) {
+  //       console.error("Form submission error:", err);
+  //       alert("Something went wrong.");
+  //     } finally {
+  //       setIsSubmitting(false);
+  //     }
+  //   }
+  // };
+
 
   return (
     <div className="font-sans">
@@ -108,70 +117,48 @@ export default function ContactInfo() {
           <form
             action="https://formspree.io/f/mldllqjq"
             method="POST"
-            onSubmit={handleSubmit}
             className="flex flex-col space-y-4"
           >
             <input
               type="text"
+              name="fullName"
               placeholder="Your Name"
-              value={formData.fullName}
-              onChange={(e) =>
-                setFormData({ ...formData, fullName: e.target.value })
-              }
+              required
               className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
             />
-            {errors.fullName && (
-              <p className="text-red-500 text-sm">{errors.fullName}</p>
-            )}
 
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
+              required
               className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
             />
-            {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email}</p>
-            )}
 
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
-              value={formData.subject}
-              onChange={(e) =>
-                setFormData({ ...formData, subject: e.target.value })
-              }
+              required
               className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
             />
-            {errors.subject && (
-              <p className="text-red-500 text-sm">{errors.subject}</p>
-            )}
 
             <textarea
-              placeholder="Message"
+              name="message"
               rows="5"
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
+              placeholder="Message"
+              required
               className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
             ></textarea>
-            {errors.message && (
-              <p className="text-red-500 text-sm">{errors.message}</p>
-            )}
 
             <button
               type="submit"
-              className={`bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600 transition ${isSubmitting ? "animate-pulse" : ""
-                }`}
-              disabled={isSubmitting}
+              className="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600 transition"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              Send Message
             </button>
           </form>
+
         </div>
       </div>
       {/* Google Map */}

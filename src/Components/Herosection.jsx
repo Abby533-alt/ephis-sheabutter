@@ -4,13 +4,13 @@ import { Link } from "react-router";
 // HeroSection.jsx
 export default function HeroSection() {
   return (
-    <div className="relative bg-cover bg-center h-screen text-white md:mt-5" style={{ backgroundImage: `url(${heroimg})` }}>
+    <div className="relative bg-cover bg-center h-screen text-white md:mt-5 mt-15" style={{ backgroundImage: `url(${heroimg})` }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* Hero Content */}
       <section className="relative z-10 flex flex-col justify-center h-full px-6 md:px-16 max-w-5xl">
-        <div className="bg-yellow-700 w-fit px-4 py-1 rounded-full text-sm font-semibold mb-4 flex items-center gap-2">
+        <div className="bg-yellow-700 w-fit px-4 py-1 rounded-full text-sm font-semibold mb-4 flex items-center gap-2 mt-7">
           <span>🌿</span> 100% Pure & Natural
         </div>
 
