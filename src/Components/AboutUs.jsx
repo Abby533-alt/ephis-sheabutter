@@ -60,7 +60,7 @@ export default function AboutUs() {
             <img
               src={product2}
               alt="About Us"
-              className="rounded-lg shadow-md object-cover w-[350px] h-[400px]"
+              className="rounded-lg shadow-md object-cover w-[350px] h-[420px]"
             />
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function AboutUs() {
               <img
                 src={product9}
                 alt="Business Vision"
-                className="rounded-lg shadow-md object-cover w-[300px] h-[250px]"
+                className="rounded-lg shadow-md object-cover w-[310px] h-[320px]"
               />
             </div>
 
@@ -113,7 +113,7 @@ export default function AboutUs() {
               <img
                 src={products3}
                 alt="Business Mission"
-                className="rounded-lg shadow-md object-cover w-[300px] h-[250px]"
+                className="rounded-lg shadow-md object-cover w-[310px] h-[320px]"
               />
             </div>
           </div>
